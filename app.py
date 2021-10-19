@@ -129,7 +129,7 @@ elif choice == "Login":
             if task == 'Zirconia database':
                 st.subheader('Database')
                 data_result = view_all_data()
-                clean_db1 = pd.DataFrame(data_result,columns=['N°','Carat','Cut','Color','Clarity','Depth','Table','Width','Height','Price'])
+                clean_db1 = pd.DataFrame(data_result,columns=['index','Carat','Cut','Color','Clarity','Depth','Table','Width','Height','Price'])
                 st.dataframe(clean_db1)
 
             elif task == 'Predictions':

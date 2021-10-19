@@ -56,7 +56,7 @@ def view_all_users():
     return user
 
 
-#df.to_sql("data", conn, if_exists="replace",index_label='index')
+#df.to_sql("data", conn, if_exists="replace",index_label='id')
 
 
 def view_all_data():
@@ -129,7 +129,7 @@ elif choice == "Login":
             if task == 'Zirconia database':
                 st.subheader('Database')
                 data_result = view_all_data()
-                clean_db1 = pd.DataFrame(data_result,columns=['index','Carat','Cut','Color','Clarity','Depth','Table','Width','Height','Price'])
+                clean_db1 = pd.DataFrame(data_result,columns=['ID','Carat','Cut','Color','Clarity','Depth','Table','Width','Height','Price'])
                 st.dataframe(clean_db1)
 
             elif task == 'Predictions':

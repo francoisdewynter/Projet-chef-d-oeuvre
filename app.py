@@ -224,5 +224,5 @@ elif choice == 'Sign Up':
 elif choice == 'Signal a problem':
     logging.info('Problem signaled!')
     client = Client("utyoawn8mwpzacm4v6ksmuk6qqdjaz", api_token="askzvf52zwwmypoh1kyzj7xgynjt9i")
-    client.send_message("Hello! If you have met a problem, send a text message to 0785121093!", title="Hello")
+    client.send_message("Hello! If you have met a problem, send us an email!", title="Hello")
     st.success('We have sent you a message!')
